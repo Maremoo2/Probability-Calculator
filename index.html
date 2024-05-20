@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilty Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>Probability detector</h1>
+
+    <!-- output list -->
+    <ul class="item-list">
+    </ul>
+</div>
+
+<footer>
+    <form class="new-item-form">
+        <div class="field">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="percentage">Percentage</option>
+                <option value="chance">Chance</option>
+            </select>
+        </div>
+        <div class="field">
+            <label id="label-tofrom">Percentage/Chance:</label>
+            <input type="text" id="tofrom">
+        </div>
+        <div class="field">
+            <label for="tries">Tries:</label>
+            <input type="number" id="tries">
+        </div>
+        <div class="field">
+            <label for="answer">Answer:</label>
+            <input type="text" id="answer" readonly>
+        </div>
+        <button type="button" onclick="calculateProbability()">Calculate</button>
+    </form>
+
+</footer>
+
+<script src="sandbox.js"></script>
+</body>
+</html>
